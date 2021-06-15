@@ -1,0 +1,151 @@
+.modal-menu-mobile {
+	display: none;
+	
+	width: 100%;
+	max-width: 375px;
+
+	height: 582px;
+
+	padding: 10px 10px 0 38px;
+
+	background: $dark-green-color;
+
+	border-bottom: 1px solid #14482B;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	animation-name: animate;
+  animation-duration: 0.8s;
+
+	@keyframes animate {
+		from {top:-320px; opacity:0}
+		to {top:0; opacity:1}
+	}
+
+	/* header ===================================== */
+	&__header {
+		width: 100%;
+
+		margin: 0 auto;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		width: 134px;
+		height: 40px;
+
+		background: $beige-color;
+
+		border: 0;
+		outline: 0;
+
+		cursor: pointer;
+	}
+
+	&__btn_text {
+		font-weight: bold;
+		font-size: 12px;
+
+		color: #2B2B2B;
+	}
+
+	&__btn_close {
+		width: 50px;
+		height: 50px;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		cursor: pointer;
+	}
+
+	/* list ===================================== */
+	&__list {
+		margin: 30px 0 0 74px;
+	}
+
+	&__item {
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 38px;
+		letter-spacing: 1px;
+	}
+
+	&__link {
+		color: $beige-color;
+	}
+
+	/* elements ===================================== */
+	&__elements {
+		height: 45px;
+
+		margin: 30px 0 0 74px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__elements_item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__elements_text {
+		margin-left: 10px;
+
+		font-size: 14px;
+
+		color: #9FC460;
+	}
+
+	/* tel ===================================== */
+	&__tel {
+		margin: 15px 0 0 74px;
+	}
+
+	&__tel_link {
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 28px;
+		letter-spacing: 1px;
+		
+		color: $beige-color;
+	}
+
+	&__tel_text {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 1px;
+
+		color: #9FC460;
+	}
+
+	/* address ===================================== */
+	&__address {
+		width: 253px;
+
+		margin: 20px 0 0 40px;
+	}
+
+	&__address_wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	&__address_text {
+		margin-left: 12px;
+
+		font-weight: bold;
+		font-size: 14px;
+
+		color: #9E7B56;
+	}
+}
